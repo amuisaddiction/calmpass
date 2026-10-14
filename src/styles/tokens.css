@@ -1,0 +1,65 @@
+:root {
+  /* Core paper background: warm and low-glare rather than pure white. */
+  --color-paper: #F8F6F0;
+  /* Primary ink blue: brand, links, focus outlines, and primary actions. */
+  --color-ink-blue: #243B80;
+  /* Sage: quiet, supportive surfaces and positive visual grouping. */
+  --color-sage: #DCE8D8;
+  /* Coral: warm accent for key details and secondary highlights. */
+  --color-coral: #FF795B;
+  /* Main text: dark charcoal for readable body copy. */
+  --color-charcoal: #252923;
+  /* Muted text: secondary labels and explanatory details. */
+  --color-muted: #62665F;
+  /* Soft border: card outlines and separators. */
+  --color-border: #E4E1D8;
+  /* White surface: cards and map rooms. */
+  --color-surface: #FFFDF8;
+  /* Light blue surface: supporting information panels. */
+  --color-blue-wash: #E7EAF5;
+
+  /* Main body font: clear interface and paragraph text. */
+  --font-body: "Inter", sans-serif;
+  /* Editorial display font: warm, distinctive headings. */
+  --font-display: "Fraunces", Georgia, serif;
+
+  /* Compact spacing unit: icons and tight label groups. */
+  --space-1: 0.25rem;
+  /* Small spacing unit: inline elements. */
+  --space-2: 0.5rem;
+  /* Standard spacing unit: controls and card internals. */
+  --space-3: 0.75rem;
+  /* Comfortable spacing unit: common component gaps. */
+  --space-4: 1rem;
+  /* Medium spacing unit: related blocks. */
+  --space-6: 1.5rem;
+  /* Large spacing unit: card padding and section gaps. */
+  --space-8: 2rem;
+  /* Extra-large spacing unit: section rhythm. */
+  --space-12: 3rem;
+  /* Wide spacing unit: hero and section separation. */
+  --space-16: 4rem;
+  /* Maximum spacing unit: large desktop composition. */
+  --space-24: 6rem;
+
+  /* Small radius: badges and compact controls. */
+  --radius-sm: 0.5rem;
+  /* Medium radius: buttons and small cards. */
+  --radius-md: 1rem;
+  /* Large radius: hero panels and feature cards. */
+  --radius-lg: 1.5rem;
+  /* Pill radius: fully rounded actions. */
+  --radius-pill: 999px;
+
+  /* Soft card shadow: gentle depth without heavy contrast. */
+  --shadow-card: 0 18px 50px rgba(36, 59, 128, 0.08);
+  /* Focus ring: visible keyboard navigation indicator. */
+  --focus-ring: 0 0 0 3px rgba(255, 121, 91, 0.55);
+
+  /* Main content width: limits long line lengths on wide screens. */
+  --content-width: 1160px;
+  /* Standard transition: restrained movement for hover and focus states. */
+  --motion-fast: 160ms ease;
+  /* Decorative transition: slightly slower entrance and hover motion. */
+  --motion-gentle: 320ms ease;
+}

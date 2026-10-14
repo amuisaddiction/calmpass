@@ -1,0 +1,10 @@
+@media print {
+  :root { color: #000; background: #fff; }
+  .site-header, .hero-actions, .site-footer { display: none !important; }
+  .section-wrap { width: 100%; }
+  .hero { display: block; min-height: auto; padding: 0; }
+  .hero-art { background: none; }
+  .floor-preview { filter: none; animation: none; }
+  .sample-section { background: #fff; border-top: 1px solid #999; }
+  a { color: #000; text-decoration: none; }
+}

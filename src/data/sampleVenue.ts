@@ -1,0 +1,103 @@
+import type { SampleVenue } from '../types/calmpass'
+
+/**
+ * Fictional venue used only for the Calmpass demonstration.
+ * Every condition derived from this data is illustrative sample data:
+ * it is not a live reading, venue report, or prediction.
+ */
+export const sampleVenue: SampleVenue = {
+  id: 'harbour-learning-centre',
+  name: 'Harbour Learning Centre',
+  description: 'A fictional public learning space for exploring a visit in advance.',
+  disclosure: 'Sample conditions, not live measurements.',
+  rooms: [
+    {
+      id: 'entrance',
+      name: 'Entrance',
+      description: 'The arrival point and transition into the building.',
+      route: true,
+      geometry: { x: 24, y: 24, width: 104, height: 74 },
+      baseline: { noise: 2, crowd: 2, light: 3, smell: 1 },
+      noiseOffset: 0,
+      lightOffset: 0,
+      smellOffset: 0,
+    },
+    {
+      id: 'reception',
+      name: 'Reception',
+      description: 'A check-in area where people may ask for directions.',
+      route: true,
+      geometry: { x: 142, y: 24, width: 104, height: 74 },
+      baseline: { noise: 2, crowd: 2, light: 3, smell: 1 },
+      noiseOffset: 1,
+      lightOffset: 0,
+      smellOffset: 0,
+    },
+    {
+      id: 'main-corridor',
+      name: 'Main Corridor',
+      description: 'The connecting route between the main rooms.',
+      route: true,
+      geometry: { x: 24, y: 116, width: 222, height: 52 },
+      baseline: { noise: 2, crowd: 2, light: 3, smell: 1 },
+      noiseOffset: 1,
+      lightOffset: 0,
+      smellOffset: 0,
+    },
+    {
+      id: 'waiting-area',
+      name: 'Waiting Area',
+      description: 'A place to pause before an appointment or activity.',
+      route: true,
+      geometry: { x: 24, y: 186, width: 104, height: 74 },
+      baseline: { noise: 2, crowd: 2, light: 3, smell: 1 },
+      noiseOffset: 1,
+      lightOffset: 0,
+      smellOffset: 0,
+    },
+    {
+      id: 'quiet-room',
+      name: 'Quiet Room',
+      description: 'An optional refuge away from the main route.',
+      route: false,
+      refuge: true,
+      geometry: { x: 142, y: 186, width: 104, height: 74 },
+      baseline: { noise: 1, crowd: 1, light: 2, smell: 1 },
+      noiseOffset: -1,
+      lightOffset: -1,
+      smellOffset: 0,
+    },
+    {
+      id: 'service-desk',
+      name: 'Service Desk',
+      description: 'A help point that may have more activity at busy times.',
+      route: true,
+      geometry: { x: 260, y: 24, width: 112, height: 74 },
+      baseline: { noise: 2, crowd: 2, light: 3, smell: 2 },
+      noiseOffset: 1,
+      lightOffset: 0,
+      smellOffset: 1,
+    },
+    {
+      id: 'exit',
+      name: 'Exit',
+      description: 'The route out of the building.',
+      route: false,
+      geometry: { x: 260, y: 186, width: 112, height: 74 },
+      baseline: { noise: 1, crowd: 1, light: 3, smell: 1 },
+      noiseOffset: 0,
+      lightOffset: 0,
+      smellOffset: 0,
+    },
+  ],
+  timeStops: [
+    { id: '9am', label: '9 AM', minutesAfterMidnight: 540 },
+    { id: '11am', label: '11 AM', minutesAfterMidnight: 660 },
+    { id: '1pm', label: '1 PM', minutesAfterMidnight: 780 },
+    { id: '3pm', label: '3 PM', minutesAfterMidnight: 900 },
+    { id: '5pm', label: '5 PM', minutesAfterMidnight: 1020 },
+  ],
+  // The curve intentionally has its lowest values at opening and late afternoon,
+  // and its peak around lunchtime. These are fictional values for the demo.
+  crowdCurve: [1, 2, 3, 2, 1],
+}
