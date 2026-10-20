@@ -17,6 +17,23 @@
   --color-surface: #FFFDF8;
   /* Light blue surface: supporting information panels. */
   --color-blue-wash: #E7EAF5;
+  /* Deep sage for high-contrast text on sage backgrounds */
+  --color-sage-deep: #2E4C2E;
+  /* Deep coral for text accents and tags */
+  --color-coral-deep: #C84628;
+  /* Soft warm coral wash for badges and highlights */
+  --color-coral-soft: #FDE8E2;
+  /* Warm secondary surface */
+  --color-paper-warm: #F4EFE6;
+  /* Soft butter / warm ivory canvas */
+  --color-ivory: #FAF8F2;
+  /* Electric cobalt blue: signature brand & interaction punch */
+  --color-electric-cobalt: #1D4ED8;
+  /* Acid lime / chartreuse: restrained secondary editorial punch */
+  --color-acid-lime: #D9F944;
+  --color-acid-lime-deep: #3A4C05;
+  /* Deep ink for modern high-contrast typography */
+  --color-deep-ink: #111827;
 
   /* Main body font: clear interface and paragraph text. */
   --font-body: "Inter", sans-serif;

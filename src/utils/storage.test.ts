@@ -33,3 +33,4 @@ describe('storage utility', () => {
     expect(readStoredValue('item-to-delete', 'gone')).toBe('gone')
   })
 })
+
