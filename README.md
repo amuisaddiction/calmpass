@@ -2,7 +2,7 @@
 
 **Know the room before you walk in.**
 
-Calmpass is a sensory-aware visit-planning concept. It helps people prepare for unfamiliar public places by exploring a sample venue, comparing illustrative sensory conditions, and creating a simple visit plan.
+Calmpass is a sensory-aware venue navigation and visit-planning experience designed to make unfamiliar spaces feel more accessible, predictable, and comfortable. It helps people prepare for unfamiliar public places by exploring a sample venue, comparing illustrative sensory conditions, and creating a simple visit plan.
 
 ## Current starter scope
 
@@ -12,7 +12,7 @@ This starter includes:
 - Self-hosted Fraunces and Inter fonts.
 - A small sample venue data model and deterministic illustrative condition helper.
 - Safe local-storage helpers and a typed state hook for later phases.
-- Accessibility foundations, a print stylesheet, and a small Vitest suite.
+- Accessibility foundations, a print stylesheet, and a comprehensive Vitest suite.
 
 The landing page is the current UI scope. Preferences, the interactive explorer, recommendation UI, and visit pass are intentionally not built yet.
 
